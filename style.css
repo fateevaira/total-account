@@ -1,0 +1,120 @@
+body {
+    background-image: url("https://images.unsplash.com/photo-1626091467160-be812fe7a536?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDk1fEpwZzZLaWRsLUhrfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-color:rgba(45, 78, 29, 0.9);
+    }
+
+.container {
+    background-color:rgba(165, 250, 139, 0.5);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 810px;
+    border-radius: 40px;
+    }
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Dancing Script', cursive;
+    margin: 10px;
+    padding: 15px;
+}
+.header {
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    font-family: 'Dancing Script', cursive;
+    color: #eb8108;
+    font-size: 40px;
+    text-align: center;
+}
+p{
+    font-size: 25px;
+}
+span{
+    font-size: 20px;
+}
+input {
+    font-family: 'Dancing Script', cursive;
+    padding: 5px;
+}
+
+#addDonations {
+background-color:#f0e772;
+border: none;
+border-radius: 10px;
+padding: 5px;
+font-family: 'Dancing Script', cursive;
+}
+
+#btn {
+    background-color: #eb8108;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    font-family: 'Dancing Script', cursive;
+    }
+
+#donations {
+    font-family: 'Dancing Script', cursive;
+    display: none;
+}
+
+#showTotalAmountToPay {
+    display: flex;
+    justify-content: space-between;
+}
+
+#billSplit, #totalDonations, #totalAmount {
+    font-family: 'Dancing Script', cursive;
+    margin: 5px;
+    padding: 10px;
+    background-color: rgba(143, 231, 60, 0.9);
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+@media all and (max-width:800px){
+    .container {
+        width: 400px;
+        height: 810px;
+        }
+    h1 {
+        font-size: 30px;
+    }
+    form {
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 20px;
+    }
+    #btn {
+        padding: 5px;
+    }
+}
+
+@media all and (max-width:400px){
+    .container {
+        width: 400px;
+        height: 810px;
+        }
+    h1 {
+        font-size: 30px;
+    }
+    form {
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 20px;
+    }
+    #btn {
+        padding: 5px;
+    }
+}

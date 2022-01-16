@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Buying food for homeless animals</h1>
+        </div>
+
+    <form>
+        <p>Feed cost 🐾</p>
+        <span>$<input type="text" id="cost" placeholder="Cost"></span>
+
+        <p>🙋 Number of people</p>
+        <span><input type="text" id="people" placeholder="How many people?"></span>
+
+        <p>🍖 Let's buy something tasty? 🍖</p>
+        <button id="addDonations">Add donations!</button>
+
+        <select id="donations">
+            <option disabled>Select an option</option>
+            <option value="0.30">I have great times! 30% 💗</option>
+            <option value="0.20">Now is a good time! 20% 😎</option>
+            <option value="0.10">I have a chance 10% 😊</option>
+            <option value="0.00" selected>Sorry, I can’t now 😔</option>
+        </select>
+
+        <button id="btn">Calculate</button>
+    </form>
+
+    <div id="showTotalAmountToPay">
+        <div id="billSplit">
+            <p>Bill</p>
+            <span>$</span>
+            <span id="dividedBill"></span>
+            <span>per person</span>
+        </div>
+
+        <div id="totalDonations">
+            <p>Donations</p>
+            <span>$</span>
+            <span id="dividedDonations"></span>
+            <span>per person</span>
+        </div>
+
+        <div id="totalAmount">
+            <p>Total</p>
+            <span>$</span>
+            <span id="billAndDonations"></span>
+            <span>per person</span>
+        </div>
+
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
